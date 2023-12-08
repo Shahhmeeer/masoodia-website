@@ -1,0 +1,36 @@
+.hero {
+  min-height: 92dvh;
+  background-image: url("../public/hero-image.jpg");
+  background-size: cover;
+  /* animation: scaleUp infinite 15s linear; */
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.125);
+  }
+}
+
+.imageText {
+  background-image: url("../public/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.constrainedLayout {
+  @apply max-w-7xl mx-auto;
+}
+
+.card {
+  @apply flex flex-col justify-center items-center rounded-md max-w-md h-72 hover:bg-red-300 p-6 bg-blue-100 relative shadow-md;
+}
+
+.btn {
+  @apply bg-blue-400 rounded-md font-semibold text-base px-8 py-2 hover:bg-blue-100;
+}
