@@ -7,6 +7,7 @@ import styles from "./home.module.css";
 import services from "./data/services";
 import details from "./data/details";
 import partners from "./data/partners";
+import CustomCarousel from "@/components/Custom Carousel";
 
 const customStyles = {
   display: "flex",
@@ -14,6 +15,7 @@ const customStyles = {
   alignItems: "center",
   justifyContent: "center",
   height: "100dvh",
+  backgroundColor: "red",
 };
 
 const customTextStyle = {
@@ -31,16 +33,9 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className="relative" style={{ backgroundColor: "rgba(0,0,0,0.30)" }}>
+        <div className="relative">
           <div className={styles.constrainedLayout} style={customStyles}>
-            <h1 className="text-6xl font-black text-yellow-400 spacing">Masoodia</h1>
-            <p className="max-w-lg py-4 text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore architecto, unde voluptatibus animi fugit voluptatum. Esse modi amet ducimus soluta, iusto
-              suscipit rerum neque ipsa minima sint voluptas expedita.
-            </p>
-            <a href="#services" className={styles.btn}>
-              Our Services
-            </a>
+            <CustomCarousel />
           </div>
           <div className="custom-shape-divider-bottom-1702067844">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

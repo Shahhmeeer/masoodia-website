@@ -1,8 +1,5 @@
 .hero {
   min-height: 92dvh;
-  background-image: url("../public/hero-image.jpg");
-  background-size: cover;
-  /* animation: scaleUp infinite 15s linear; */
 }
 
 @keyframes scaleUp {
