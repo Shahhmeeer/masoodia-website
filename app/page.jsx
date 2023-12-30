@@ -13,7 +13,7 @@ const customStyles = {
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  height: "90dvh",
+  height: "100dvh",
 };
 
 const customTextStyle = {
@@ -21,19 +21,20 @@ const customTextStyle = {
   lineHeight: "1.625",
   fontWeight: "700",
   maxWidth: "40rem",
-  backgroundColor: 'red',
+  backgroundColor: "red",
   marginInline: "auto",
 };
 
 export default function Home() {
+  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "minerals.jpg", "solar.jpg"];
   return (
     <main>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div style={{ backgroundColor: "rgba(0,0,0,0.30)" }}>
+        <div className="relative" style={{ backgroundColor: "rgba(0,0,0,0.30)" }}>
           <div className={styles.constrainedLayout} style={customStyles}>
-            <h1 className="text-7xl font-black">Masoodia</h1>
-            <p className="max-w-xl py-4">
+            <h1 className="text-6xl font-black text-yellow-400 spacing">Masoodia</h1>
+            <p className="max-w-lg py-4 text-white">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore architecto, unde voluptatibus animi fugit voluptatum. Esse modi amet ducimus soluta, iusto
               suscipit rerum neque ipsa minima sint voluptas expedita.
             </p>
@@ -57,15 +58,21 @@ export default function Home() {
       {/* Main Section */}
       <section id="services" className={styles.constrainedLayout}>
         <section>
-          <h1 className={styles.imageText} style={customTextStyle}>Agriculture Products Exporter in Pakistan</h1>
+          <h1 className={styles.imageText} style={customTextStyle}>
+            Agriculture Products Exporter in Pakistan
+          </h1>
           <div className="grid grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <div key={index} className={styles.card}>
-                <h1 className="font-bold text-2xl">{service.name}</h1>
-                <p className=" text-sm leading-relaxed mb-4">{service.description}</p>
-                <Link href={service.ctaLink} className={styles.btn}>
-                  {service.cta}
-                </Link>
+              <div key={index} className={styles.card} style={{ backgroundImage: `url('${serviceImages[index]}')` }}>
+                <div className={styles.overlay}>
+                  <div className={styles.cardContent}>
+                    <h1 className="font-bold text-3xl">{service.name}</h1>
+                    <p className=" text-sm leading-relaxed mb-4">{service.description}</p>
+                    <Link href={service.ctaLink} className={styles.btn}>
+                      {service.cta}
+                    </Link>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

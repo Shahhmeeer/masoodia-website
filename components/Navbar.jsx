@@ -1,12 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 bg-white flex items-center shadow-md z-10" style={{ minHeight: "8dvh" }}>
-      <div className="max-w-7xl mx-auto flex items-center justify-center w-full text-center">
-        <Link href="/">
-          <h1 className="text-2xl font-black md:text-3xl">Masoodia</h1>
-        </Link>
+    <header className="sticky top-0 bg-white flex items-center shadow-md z-10" style={{ minHeight: "12dvh" }}>
+      <div className="mx-auto flex items-center justify-between w-full text-center" style={{ maxWidth: "1440px" }}>
+        <div>
+          <Link href="/">
+            <Image src="/logo.png" alt="Masoodia Logo" width={120} height={120}></Image>
+          </Link>
+        </div>
+        <div>
+          <button className="btn">Contact Us</button>
+        </div>
       </div>
     </header>
   );

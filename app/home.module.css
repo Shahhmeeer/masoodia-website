@@ -24,13 +24,29 @@
 }
 
 .constrainedLayout {
-  @apply max-w-7xl mx-auto;
+  @apply mx-auto;
+  max-width: 1440px;
+}
+
+.overlay {
+  @apply rounded-md;
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100%;
+}
+
+.cardContent {
+  @apply flex items-center justify-center flex-col p-4 text-muted;
+  height: 100%;
 }
 
 .card {
-  @apply flex flex-col justify-center items-center rounded-md max-w-md h-72 hover:bg-red-300 p-6 bg-blue-100 relative shadow-md;
+  @apply flex flex-col justify-center items-center rounded-md max-w-md h-72 relative shadow-md;
+  background-image: url("/coal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn {
-  @apply bg-blue-400 rounded-md font-semibold text-base px-8 py-2 hover:bg-blue-100;
+  @apply rounded-md font-semibold text-base px-12 py-2;
+  background-color: #29b1e5;
 }

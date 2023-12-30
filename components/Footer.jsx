@@ -42,13 +42,13 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="bg-blue-300 absolute bottom-4 w-full flex items-center justify-between max-w-7xl rounded-lg" style={{ minHeight: "70px" }}>
+      <section className="absolute bottom-4 w-full text-white flex items-center justify-between" style={{ minHeight: "70px", maxWidth: "1440px" }}>
         <div>
           <button className="flex items-center" title="Go to top" onClick={toTop}>
             <Image src={"/up-icon.svg"} alt="Go to top" width={50} height={50}></Image>
           </button>
         </div>
-        <div className="text-black font-bold">
+        <div className="font-bold">
           <h1>&copy; Masoodia {currentYear} </h1>
         </div>
         <div className="flex space-x-4">
