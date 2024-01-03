@@ -5,6 +5,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/coal-import",
+    relatedImage: "/coal.jpg",
   },
   {
     name: "Solar Systems",
@@ -12,6 +13,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/solar-systems",
+    relatedImage: "/solar.jpg",
   },
   {
     name: "Bio Mass",
@@ -19,6 +21,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/bio-mass",
+    relatedImage: "/bio-mass.jpg",
   },
   {
     name: "Event Management",
@@ -26,6 +29,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/event-management",
+    relatedImage: "/event-management.jpg",
   },
   {
     name: "It Solutions",
@@ -33,6 +37,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/technology",
+    relatedImage: "/IT-solutions.jpg",
   },
   {
     name: "Minerals",
@@ -40,6 +45,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/minerals",
+    relatedImage: "/minerals.jpg",
   },
   {
     name: "Social & Welfare Projects",
@@ -47,6 +53,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/social-projects",
+    relatedImage: "/bio-mass.jpg",
   },
 ];
 

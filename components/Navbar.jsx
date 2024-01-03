@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 bg-white flex items-center shadow-md z-10" style={{ minHeight: "12dvh" }}>
+    <header className="sticky top-0 bg-white flex items-center shadow-md z-10" style={{ minHeight: "10dvh" }}>
       <div className="mx-auto flex items-center justify-between w-full text-center" style={{ maxWidth: "1440px" }}>
         <div>
           <Link href="/">

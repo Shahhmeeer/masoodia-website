@@ -15,7 +15,6 @@ const customStyles = {
   alignItems: "center",
   justifyContent: "center",
   height: "100dvh",
-  backgroundColor: "red",
 };
 
 const customTextStyle = {
