@@ -1,5 +1,6 @@
 .hero {
-  min-height: 92dvh;
+  height: 100dvh;
+  position: relative;
 }
 
 @keyframes scaleUp {
@@ -38,7 +39,6 @@
 
 .card {
   @apply flex flex-col justify-center items-center rounded-md max-w-md h-72 relative shadow-md;
-  background-image: url("/coal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

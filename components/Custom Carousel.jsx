@@ -1,33 +1,36 @@
 "use client";
 
-import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import services from "@/app/data/services";
 
 export default function CustomCarousel() {
+  const carouselImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "/minerals.jpg", "/social-welfare.jpg"];
   return (
     <Carousel
-      className="h-full w-full relative"
+      className="w-full relative overflow-hidden"
+      style={{ height: "100dvh" }}
       opts={{
-        align: "start",
         loop: true,
       }}
       plugins={[
         Autoplay({
-          delay: 3000,
+          delay: 5000,
         }),
       ]}
     >
-      <CarouselContent className="relative h-full">
-        {services.map((service, index) => (
-          <CarouselItem key={index} style={{ backgroundColor: "red", height: "400px" }}>
-            <Image alt={service.name} src={service.relatedImage} fill={true} quality={30}></Image>
+      <CarouselContent className="relative" style={{ height: "100dvh" }}>
+        {carouselImages.map((carouselImage, index) => (
+          <CarouselItem key={index}>
+            <div className="bg-green-400 h-full relative bg-no-repeat bg-cover" style={{ backgroundImage: `url("${carouselImage}")` }}>
+              <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className="h-full w-full text-white flex items-center justify-center flex-col">
+                <h1 className="font-semibold text-3xl">{services[index].name}</h1>
+                <p className="max-w-xl">{services[index].description}</p>
+              </div>
+            </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 }

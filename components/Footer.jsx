@@ -51,10 +51,6 @@ export default function Footer() {
         <div className="font-bold">
           <h1>&copy; Masoodia {currentYear} </h1>
         </div>
-        <div className="flex space-x-4">
-          <Image src={"/facebook-icon.svg"} alt="Facebook Icon" width={40} height={40}></Image>
-          <Image src={"/linkedin-icon.svg"} alt="LinkedIn Icon" width={40} height={40}></Image>
-        </div>
       </section>
     </footer>
   );

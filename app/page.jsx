@@ -1,5 +1,5 @@
 import Image from "next/image";
-import masoodia from "../public/hero-image.jpg";
+import masoodia from "../public/social-welfare.jpg";
 import "./globals.css";
 import Link from "next/link";
 
@@ -9,31 +9,23 @@ import details from "./data/details";
 import partners from "./data/partners";
 import CustomCarousel from "@/components/Custom Carousel";
 
-const customStyles = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  height: "100dvh",
-};
-
 const customTextStyle = {
   fontSize: "3.5rem",
   lineHeight: "1.625",
   fontWeight: "700",
   maxWidth: "40rem",
-  backgroundColor: "red",
+  backgroundColor: "#29b1e5",
   marginInline: "auto",
 };
 
 export default function Home() {
-  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "minerals.jpg", "solar.jpg"];
+  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "minerals.jpg", "/social-welfare.jpg"];
   return (
     <main>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className="relative">
-          <div className={styles.constrainedLayout} style={customStyles}>
+        <div className="relative h-full">
+          <div className="h-full mx-auto">
             <CustomCarousel />
           </div>
           <div className="custom-shape-divider-bottom-1702067844">

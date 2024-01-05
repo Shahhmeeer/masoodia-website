@@ -53,7 +53,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat dicta placeat nulla esse tempore. Reiciendis accusamus libero dicta quam veritatis earum a assumenda, blanditiis praesentium aut natus inventore quod!",
     cta: "Read More",
     ctaLink: "/social-projects",
-    relatedImage: "/bio-mass.jpg",
+    relatedImage: "/social-welfare.jpg",
   },
 ];
 
