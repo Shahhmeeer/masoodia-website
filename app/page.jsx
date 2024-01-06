@@ -1,5 +1,5 @@
 import Image from "next/image";
-import masoodia from "../public/social-welfare.jpg";
+import masoodia from "../public/coal.jpg";
 import "./globals.css";
 import Link from "next/link";
 
@@ -19,14 +19,15 @@ const customTextStyle = {
 };
 
 export default function Home() {
-  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "minerals.jpg", "/social-welfare.jpg"];
+  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "/minerals.jpg", "/social-welfare.jpg"];
+
   return (
     <main>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className="relative h-full">
           <div className="h-full mx-auto">
-            <CustomCarousel />
+            <CustomCarousel carouselImages={serviceImages} isHero={true} />
           </div>
           <div className="custom-shape-divider-bottom-1702067844">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -49,7 +50,7 @@ export default function Home() {
           </h1>
           <div className="grid grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <div key={index} className={styles.card} style={{ backgroundImage: `url('${serviceImages[index]}')` }}>
+              <div data-aos="zoom-in" key={index} className={styles.card} style={{ backgroundImage: `url('${serviceImages[index]}')` }}>
                 <div className={styles.overlay}>
                   <div className={styles.cardContent}>
                     <h1 className="font-bold text-3xl">{service.name}</h1>
@@ -70,7 +71,6 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quod eos et. Quasi, mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium, incidunt! officiis. Aliquid illo tempore veritatis. Voluptas.
             </p>
-            <button className={styles.btn}>More about us</button>
           </div>
           <div className="flex-1">
             <Image src={masoodia} alt="Masoodia Image" className="aspect-video rounded-2xl" quality={70}></Image>
@@ -100,13 +100,9 @@ export default function Home() {
       </section>
       <section className={styles.constrainedLayout}>
         <section className="w-full flex items-center justify-center flex-col" style={{ minHeight: "300px" }}>
-          <h1 className="font-semibold text-xl text-center py-8">Our Premium Partners</h1>
+          <h1 className="font-semibold text-3xl text-center py-8">Our Premium Partners</h1>
           <div className="flex justify-between w-full">
-            {partners.map((partner, index) => (
-              <div key={index}>
-                <Image src={partner} alt="Partners" width={200} height={100} className="aspect-video rounded-md"></Image>
-              </div>
-            ))}
+            <CustomCarousel carouselImages={partners} isHero={false} />
           </div>
         </section>
       </section>
@@ -115,7 +111,9 @@ export default function Home() {
           <h1 className="font-bold text-xl text-center">Get in Touch</h1>
           <p className="my-4">Please feel free to contact us for any further information.</p>
           <div className="flex justify-center">
-            <button className={styles.btn}>Contact Us</button>
+            <a href="https://wa.me/923324884895" className={styles.btn} target="_blank">
+              Contact Us
+            </a>
           </div>
         </section>
       </section>

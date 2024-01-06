@@ -11,7 +11,9 @@ export default function Navbar() {
           </Link>
         </div>
         <div>
-          <button className="rounded-md font-semibold text-base px-12 py-2 bg-blue-400 text-white">Contact Us</button>
+          <a href="mailto:hmarmasodi@gmail.com" className="rounded-md text-base px-6 py-2 bg-blue-400 hover:bg-blue-200 hover:text-black text-white">
+            Contact Us
+          </a>
         </div>
       </div>
     </header>

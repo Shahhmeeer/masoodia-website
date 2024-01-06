@@ -33,7 +33,7 @@ export default function Footer() {
             <h1 className="font-bold text-xl pb-4">Contact</h1>
             <ul className="list-none">
               {footerIcons.map((footerIcon, index) => (
-                <li key={index} className="flex items-center gap-3 space-y-2 text-sm">
+                <li key={index} className="flex items-center gap-3 space-y-4 text-sm">
                   <Image src={footerIcon.IconPath} alt={footerIcon.alt} width={30} height={30}></Image>
                   <p>{footerIcon.IconDescription}</p>
                 </li>
