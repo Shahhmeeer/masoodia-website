@@ -11,7 +11,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div>
-          <a href="mailto:hmarmasodi@gmail.com" className="rounded-md text-base px-6 py-2 bg-blue-400 hover:bg-blue-200 hover:text-black text-white">
+          <a href="mailto:hmarmasodi@gmail.com" className="mr-4 sm:mr-0 rounded-full text-base px-6 py-2 bg-red-600 hover:bg-red-400 transition duration-500 text-white">
             Contact Us
           </a>
         </div>

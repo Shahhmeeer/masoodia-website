@@ -10,12 +10,12 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
   return (
-    <footer style={{ minHeight: "500px" }} className="flex items-center justify-center flex-col relative bg-blue-800 text-white">
+    <footer style={{ minHeight: "500px" }} className="flex items-center justify-center flex-col relative bg-red-600 text-white">
       <section className={styles.constrainedLayout} style={{ width: "100%" }}>
         <div className="flex flex-col md:flex-row">
           <div className="flex-1">
             <h1 className="font-black text-5xl pb-4">Masoodia</h1>
-            <p className="max-w-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, soluta ad. Pariatur ea rerum non cumque corporis mollitia quas cupiditate?</p>
+            <p className="max-w-xs">Masoodia® is an independent energy company Registered in 2012 and supplying Coal & Bio Mass to many Top Ranking Companies in Pakistan.</p>
           </div>
           <div className="flex-1">
             <h1 className="font-bold text-xl pb-4">Services</h1>

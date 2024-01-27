@@ -25,9 +25,9 @@ export default function CustomCarousel({ carouselImages, isHero }) {
           {carouselImages.map((carouselImage, index) => (
             <CarouselItem key={index}>
               <div className="h-full relative bg-no-repeat bg-cover" style={{ backgroundImage: `url("${carouselImage}")` }}>
-                <div style={{ backgroundColor: "rgba(0,0,0,0.5)" }} className="h-full w-full text-white flex items-center justify-center flex-col">
-                  <h1 className="font-semibold text-3xl">{services[index].name}</h1>
-                  <p className="max-w-xl">{services[index].description}</p>
+                <div style={{ backgroundColor: "rgba(0,0,0,0.75)" }} className="h-full w-full text-white flex items-center justify-center flex-col">
+                  <h1 className="font-semibold text-2xl md:text-5xl lg:text-7xl mb-4">{services[index].name}</h1>
+                  <p className="mx-8 sm:mx-0 md:max-w-xl md:text-justify text-sm">{services[index].description}</p>
                 </div>
               </div>
             </CarouselItem>

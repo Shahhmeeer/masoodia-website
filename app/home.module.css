@@ -28,7 +28,7 @@
 
 .overlay {
   @apply rounded-md;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.65);
   height: 100%;
 }
 
@@ -44,6 +44,5 @@
 }
 
 .btn {
-  @apply rounded-md font-semibold text-base px-12 py-2;
-  background-color: #29b1e5;
+  @apply rounded-full font-semibold text-base px-12 py-2 bg-green-500 hover:bg-green-300 transition duration-500 text-black;
 }

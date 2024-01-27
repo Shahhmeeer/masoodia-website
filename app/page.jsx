@@ -14,14 +14,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const customTextStyle = {
-  lineHeight: "1.625",
-  fontWeight: "700",
-  maxWidth: "40rem",
-  backgroundColor: "#29b1e5",
-  backgroundImage: "url('../public/hero-image.jpg')",
-};
-
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -55,7 +47,7 @@ export default function Home() {
       {/* Main Section */}
       <section id="services" className={styles.constrainedLayout}>
         <section>
-          <h1 className="bg-no-repeat bg-clip-text mx-auto text-base md:text-5xl text-blue-600" style={customTextStyle}>
+          <h1 className="bg-no-repeat bg-clip-text mx-auto text-3xl md:text-5xl text-red-600 font-extrabold text-center max-w-xs md:max-w-lg my-10">
             Agriculture Products Exporter in Pakistan
           </h1>
           <div className="my-12"></div>
@@ -78,9 +70,9 @@ export default function Home() {
         <section className="flex items-center justify-center" style={{ minHeight: "600px" }}>
           <div className="flex flex-1 items-start flex-col justify-center space-y-4">
             <h1 className="font-bold text-2xl">About Masoodia</h1>
-            <p className="max-w-md text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quod eos et. Quasi, mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, incidunt! officiis. Aliquid illo tempore veritatis. Voluptas.
+            <p className="max-w-md text-sm text-justify">
+              Masoodia® is an independent energy company Registered in 2012 and supplying Coal & Bio Mass to many Top Ranking Companies in Pakistan. Ambitious plans and the vision
+              of a strong and modern business partner are being successfully achieved.
             </p>
           </div>
           <div className="flex-1">
@@ -92,17 +84,17 @@ export default function Home() {
 
       <div className="my-5"></div>
 
-      <section className="bg-blue-300 flex items-center justify-center" style={{ minHeight: "380px" }}>
+      <section className="bg-red-600 text-white flex items-center justify-center" style={{ minHeight: "380px" }}>
         <div className={styles.constrainedLayout}>
-          <div className="grid grid-cols-3 gap-x-6 gap-y-14">
+          <div className="py-8 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-x-6 gap-y-14">
             {details.map((detail, index) => (
-              <div key={index} className="flex gap-3 items-center">
+              <div key={index} className="flex gap-3 items-center ml-8">
                 <div>
-                  <Image src={detail.iconPath} alt={detail.altText} width={100} height={100}></Image>
+                  <Image src={detail.iconPath} alt={detail.altText} width={80} height={80}></Image>
                 </div>
                 <div>
-                  <h2 className="font-bold text-2xl">{detail.numbers}</h2>
-                  <p className="text-sm text-gray-600">{detail.detailName}</p>
+                  <h2 className="font-bold md:text-2xl text-xl">{detail.numbers}</h2>
+                  <p className="text-sm text-gray-100">{detail.detailName}</p>
                 </div>
               </div>
             ))}
@@ -117,12 +109,16 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section style={{ minHeight: "300px" }} className="bg-blue-200 flex items-center justify-center">
+      <section style={{ minHeight: "300px" }} className="bg-green-600 flex items-center justify-center">
         <section className={styles.constrainedLayout}>
           <h1 className="font-bold text-xl text-center">Get in Touch</h1>
           <p className="my-4">Please feel free to contact us for any further information.</p>
           <div className="flex justify-center">
-            <a href="https://wa.me/923324884895" className={styles.btn} target="_blank">
+            <a
+              href="https://wa.me/923324884895"
+              className="bg-green-300 transition duration-500 hover:bg-green-100 rounded-full font-semibold text-base px-12 py-2"
+              target="_blank"
+            >
               Contact Us
             </a>
           </div>
