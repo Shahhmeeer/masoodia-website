@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import masoodia from "../public/coal.jpg";
 import "./globals.css";
@@ -8,17 +10,25 @@ import services from "./data/services";
 import details from "./data/details";
 import partners from "./data/partners";
 import CustomCarousel from "@/components/Custom Carousel";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const customTextStyle = {
-  fontSize: "3.5rem",
   lineHeight: "1.625",
   fontWeight: "700",
   maxWidth: "40rem",
   backgroundColor: "#29b1e5",
-  marginInline: "auto",
+  backgroundImage: "url('../public/hero-image.jpg')",
 };
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "/minerals.jpg", "/social-welfare.jpg"];
 
   return (
@@ -45,10 +55,11 @@ export default function Home() {
       {/* Main Section */}
       <section id="services" className={styles.constrainedLayout}>
         <section>
-          <h1 className={styles.imageText} style={customTextStyle}>
+          <h1 className="bg-no-repeat bg-clip-text mx-auto text-base md:text-5xl text-blue-600" style={customTextStyle}>
             Agriculture Products Exporter in Pakistan
           </h1>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="my-12"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div data-aos="zoom-in" key={index} className={styles.card} style={{ backgroundImage: `url('${serviceImages[index]}')` }}>
                 <div className={styles.overlay}>
