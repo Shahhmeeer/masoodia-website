@@ -21,7 +21,7 @@ export default function Home() {
       once: false,
     });
   }, []);
-  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "/minerals.jpg", "/social-welfare.jpg"];
+  const serviceImages = ["/coal.jpg", "/solar.jpg", "/bio-mass.jpg", "/event-management.jpg", "/IT-solutions.jpg", "/minerals.jpg"];
 
   return (
     <main>
@@ -45,13 +45,13 @@ export default function Home() {
       {/* Hero Section End */}
 
       {/* Main Section */}
-      <section id="services" className={styles.constrainedLayout}>
+      <section id="services" className="mx-auto md:max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <section>
           <h1 className="bg-no-repeat bg-clip-text mx-auto text-3xl md:text-5xl text-red-600 font-extrabold text-center max-w-xs md:max-w-lg my-10">
             Agriculture Products Exporter in Pakistan
           </h1>
           <div className="my-12"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm mx-auto md:max-w-6xl">
             {services.map((service, index) => (
               <div data-aos="zoom-in" key={index} className={styles.card} style={{ backgroundImage: `url('${serviceImages[index]}')` }}>
                 <div className={styles.overlay}>
@@ -67,7 +67,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className="flex items-center justify-center" style={{ minHeight: "600px" }}>
+        {/* <section className="flex items-center justify-center" style={{ minHeight: "600px" }}>
           <div className="flex flex-1 items-start flex-col justify-center space-y-4">
             <h1 className="font-bold text-2xl">About Masoodia</h1>
             <p className="max-w-md text-sm text-justify">
@@ -78,14 +78,14 @@ export default function Home() {
           <div className="flex-1">
             <Image src={masoodia} alt="Masoodia Image" className="aspect-video rounded-2xl" quality={70}></Image>
           </div>
-        </section>
+        </section> */}
       </section>
       {/* Main Section End */}
 
-      <div className="my-5"></div>
+      <div className="my-28"></div>
 
       <section className="bg-red-600 text-white flex items-center justify-center" style={{ minHeight: "380px" }}>
-        <div className={styles.constrainedLayout}>
+        <div className="mx-auto md:max-w-5xl lg:max-w-7xl">
           <div className="py-8 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-x-6 gap-y-14">
             {details.map((detail, index) => (
               <div key={index} className="flex gap-3 items-center ml-8">
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.constrainedLayout}>
+      <section className="mx-auto md:max-w-5xl lg:max-w-7xl" id="partners">
         <section className="w-full flex items-center justify-center flex-col" style={{ minHeight: "300px" }}>
           <h1 className="font-semibold text-3xl text-center py-8">Our Premium Partners</h1>
           <div className="flex justify-between w-full">
@@ -109,10 +109,10 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section style={{ minHeight: "300px" }} className="bg-green-600 flex items-center justify-center">
-        <section className={styles.constrainedLayout}>
+      <section style={{ minHeight: "300px" }} className="bg-green-600 flex items-center justify-center" id="contact">
+        <section className="mx-auto md:max-w-5xl lg:max-w-7xl">
           <h1 className="font-bold text-xl text-center">Get in Touch</h1>
-          <p className="my-4">Please feel free to contact us for any further information.</p>
+          <p className="my-4 mx-4 text-sm md:my-0 md:mx-0 md:text-base">Please feel free to contact us for any further information.</p>
           <div className="flex justify-center">
             <a
               href="https://wa.me/923324884895"

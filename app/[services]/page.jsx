@@ -15,7 +15,6 @@ export default function Service({ params, searchParams }) {
         }
       });
     }
-
     getCurrentServiceData();
   }, [params.services]); // Add params.services as a dependency
 
