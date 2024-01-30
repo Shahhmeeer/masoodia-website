@@ -17,7 +17,7 @@ export default function Footer() {
             <h1 className="font-black text-4xl md:text-5xl pb-4">Masoodia</h1>
             <p className="max-w-xs">Masoodia® is an independent energy company Registered in 2012 and supplying Coal & Bio Mass to many Top Ranking Companies in Pakistan.</p>
           </div>
-          <div className="flex-1 my-8">
+          <div className="flex-1 my-8 md:my-0">
             <h1 className="font-bold text-xl pb-4">Services</h1>
             <ul className="list-none space-y-2 text-sm">
               <li>Imported and Local Coal</li>
