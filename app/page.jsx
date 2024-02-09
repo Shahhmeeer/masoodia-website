@@ -47,7 +47,7 @@ export default function Home() {
       {/* Main Section */}
       <section id="services" className="mx-auto md:max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <section>
-          <h1 className="bg-no-repeat bg-clip-text mx-auto text-3xl md:text-5xl text-red-600 font-extrabold text-center max-w-xs md:max-w-lg my-10">
+          <h1 className="bg-no-repeat bg-clip-text mx-auto text-3xl md:text-5xl text-green-600 font-black text-center max-w-xs md:max-w-lg my-10">
             Agriculture Products Exporter in Pakistan
           </h1>
           <div className="my-12"></div>
@@ -57,8 +57,8 @@ export default function Home() {
                 <div className={styles.overlay}>
                   <div className={styles.cardContent}>
                     <h1 className="font-bold text-3xl">{service.name}</h1>
-                    <p className=" text-sm leading-relaxed mb-4">{service.description}</p>
-                    <Link href={service.ctaLink} className={styles.btn}>
+                    {/* <p className=" text-sm leading-relaxed mb-4">{service.description}</p> */}
+                    <Link href={service.ctaLink} className={styles.btn} target="__blank">
                       {service.cta}
                     </Link>
                   </div>
@@ -67,34 +67,22 @@ export default function Home() {
             ))}
           </div>
         </section>
-        {/* <section className="flex items-center justify-center" style={{ minHeight: "600px" }}>
-          <div className="flex flex-1 items-start flex-col justify-center space-y-4">
-            <h1 className="font-bold text-2xl">About Masoodia</h1>
-            <p className="max-w-md text-sm text-justify">
-              Masoodia® is an independent energy company Registered in 2012 and supplying Coal & Bio Mass to many Top Ranking Companies in Pakistan. Ambitious plans and the vision
-              of a strong and modern business partner are being successfully achieved.
-            </p>
-          </div>
-          <div className="flex-1">
-            <Image src={masoodia} alt="Masoodia Image" className="aspect-video rounded-2xl" quality={70}></Image>
-          </div>
-        </section> */}
       </section>
       {/* Main Section End */}
 
       <div className="my-28"></div>
 
-      <section className="bg-red-600 text-white flex items-center justify-center" style={{ minHeight: "380px" }}>
+      <section className="bg-green-600 text-white flex items-center justify-center" style={{ minHeight: "380px" }}>
         <div className="mx-auto md:max-w-5xl lg:max-w-7xl">
           <div className="py-8 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-x-6 gap-y-14">
             {details.map((detail, index) => (
-              <div key={index} className="flex gap-3 items-center ml-8">
+              <div key={index} className="flex gap-3 items-center ml-6">
                 <div>
                   <Image src={detail.iconPath} alt={detail.altText} width={80} height={80}></Image>
                 </div>
                 <div>
-                  <h2 className="font-bold md:text-2xl text-xl">{detail.numbers}</h2>
-                  <p className="text-sm text-gray-100">{detail.detailName}</p>
+                  <h2 className="font-bold md:text-2xl text-lg">{detail.numbers}</h2>
+                  <p className="text-xs md:text-sm text-gray-100">{detail.detailName}</p>
                 </div>
               </div>
             ))}
@@ -102,21 +90,21 @@ export default function Home() {
         </div>
       </section>
       <section className="mx-auto md:max-w-5xl lg:max-w-7xl" id="partners">
-        <section className="w-full flex items-center justify-center flex-col" style={{ minHeight: "300px" }}>
-          <h1 className="font-semibold text-3xl text-center py-8">Our Premium Partners</h1>
+        <section className="w-full flex items-center justify-center flex-col" style={{ minHeight: "400px" }}>
+          <h1 className="font-black text-3xl text-center py-8">Our Premium Partners</h1>
           <div className="flex justify-between w-full">
             <CustomCarousel carouselImages={partners} isHero={false} />
           </div>
         </section>
       </section>
-      <section style={{ minHeight: "300px" }} className="bg-green-600 flex items-center justify-center" id="contact">
-        <section className="mx-auto md:max-w-5xl lg:max-w-7xl">
+      <section style={{ minHeight: "300px" }} className="bg-green-600 flex items-center" id="contact">
+        <section className="mx-auto md:max-w-5xl lg:max-w-7xl text-white">
           <h1 className="font-bold text-xl text-center">Get in Touch</h1>
-          <p className="my-4 mx-4 text-sm md:my-0 md:mx-0 md:text-base">Please feel free to contact us for any further information.</p>
+          <p className="my-4 mx-4 text-sm md:mx-0 md:text-base">Please feel free to contact us for any further information.</p>
           <div className="flex justify-center">
             <a
               href="https://wa.me/923324884895"
-              className="bg-green-300 transition duration-500 hover:bg-green-100 rounded-full font-semibold text-base px-12 py-2"
+              className="bg-green-300 transition duration-500 hover:bg-green-100 rounded-full font-semibold text-base text-black px-12 py-2"
               target="_blank"
             >
               Contact Us

@@ -10,7 +10,7 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
   return (
-    <footer style={{ minHeight: "500px" }} className="flex items-center justify-evenly flex-col relative bg-red-600 text-white">
+    <footer style={{ minHeight: "500px" }} className="flex items-center justify-evenly flex-col relative text-black">
       <section className="mx-auto md:max-w-4xl lg:max-w-6xl xl:max-w-7xl" style={{ width: "100%" }}>
         <div className="flex flex-col md:flex-row mx-8 my-4 md:mx-0 md:my-0">
           <div className="flex-1">
@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="max-w-xs">Masoodia® is an independent energy company Registered in 2012 and supplying Coal & Bio Mass to many Top Ranking Companies in Pakistan.</p>
           </div>
           <div className="flex-1 my-8 md:my-0">
-            <h1 className="font-bold text-xl pb-4">Services</h1>
+            <h1 className="font-black text-4xl pb-4">Services</h1>
             <ul className="list-none space-y-2 text-sm">
               <li>Imported and Local Coal</li>
               <li>Solar Systems</li>
@@ -30,7 +30,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex-1">
-            <h1 className="font-bold text-xl pb-4">Contact</h1>
+            <h1 className="font-black text-4xl pb-4">Contact</h1>
             <ul className="list-none space-y-4">
               {footerIcons.map((footerIcon, index) => (
                 <li key={index} className="flex items-center space-x-3 text-sm">

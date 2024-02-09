@@ -1,10 +1,10 @@
 const services = [
   {
-    name: "Imported and Local Coal",
+    name: "Imported & Local Coal",
     description:
       "Masoodia® excels in the supply of imported coal, offering a diverse range that includes Afghan, Indonesian, and local coal.",
     cta: "Read More",
-    ctaLink: "/coal-import",
+    ctaLink: "/coal",
     relatedImage: "/coal.jpg",
   },
   {
@@ -28,7 +28,7 @@ const services = [
     description:
       "Beyond energy, Masoodia® extends its expertise to event management.",
     cta: "Read More",
-    ctaLink: "/event-management",
+    ctaLink: "https://www.eventaffairs.pk",
     relatedImage: "/event-management.jpg",
   },
   {
@@ -36,7 +36,7 @@ const services = [
     description:
       "Recognizing the importance of technology in the modern business landscape, Masoodia® offers state-of-the-art IT solutions.",
     cta: "Read More",
-    ctaLink: "/technology",
+    ctaLink: "https://www.thearcanefusion.com",
     relatedImage: "/IT-solutions.jpg",
   },
   {
