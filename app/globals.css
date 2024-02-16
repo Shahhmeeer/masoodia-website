@@ -63,6 +63,34 @@ html {
   line-height: 0;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
+.image-background {
+  min-height: 100dvh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  animation: scaleUp 5000ms 1 forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

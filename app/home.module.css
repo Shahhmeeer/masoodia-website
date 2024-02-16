@@ -3,17 +3,8 @@
   position: relative;
 }
 
-@keyframes scaleUp {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1.125);
-  }
-}
-
 .imageText {
-  background-image: url("../public/hero-image.jpg");
+  /* background-image: url("../public/hero-image.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-clip: text;

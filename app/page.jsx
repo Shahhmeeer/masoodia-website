@@ -13,6 +13,7 @@ import CustomCarousel from "@/components/Custom Carousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import CustomSwiper from "@/components/Swiper";
 
 export default function Home() {
   useEffect(() => {
@@ -26,10 +27,10 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className={styles.hero}>
-        <div className="relative h-full">
-          <div className="h-full mx-auto">
-            <CustomCarousel carouselImages={serviceImages} isHero={true} />
+      <section>
+        <div className="relative">
+          <div>
+            <CustomSwiper carouselImages={serviceImages} />
           </div>
           <div className="custom-shape-divider-bottom-1702067844">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -51,14 +52,14 @@ export default function Home() {
             Agriculture Products Exporter in Pakistan
           </h1>
           <div className="my-12"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm mx-auto md:max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-xs mx-auto md:max-w-6xl">
             {services.map((service, index) => (
               <div data-aos="zoom-in" key={index} className={styles.card} style={{ backgroundImage: `url('${serviceImages[index]}')` }}>
                 <div className={styles.overlay}>
                   <div className={styles.cardContent}>
-                    <h1 className="font-bold text-3xl">{service.name}</h1>
+                    <h1 className="font-black text-2xl md:text-3xl">{service.name}</h1>
                     {/* <p className=" text-sm leading-relaxed mb-4">{service.description}</p> */}
-                    <Link href={service.ctaLink} className={styles.btn} target="__blank">
+                    <Link href={service.ctaLink} className={styles.btn}>
                       {service.cta}
                     </Link>
                   </div>
@@ -72,7 +73,7 @@ export default function Home() {
 
       <div className="my-28"></div>
 
-      <section className="bg-green-600 text-white flex items-center justify-center" style={{ minHeight: "380px" }}>
+      <section className="bg-green-800 text-white flex items-center justify-center" style={{ minHeight: "380px" }}>
         <div className="mx-auto md:max-w-5xl lg:max-w-7xl">
           <div className="py-8 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-x-6 gap-y-14">
             {details.map((detail, index) => (
@@ -97,14 +98,14 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section style={{ minHeight: "300px" }} className="bg-green-600 flex items-center" id="contact">
-        <section className="mx-auto md:max-w-5xl lg:max-w-7xl text-white">
+      <section style={{ minHeight: "300px" }} className="flex items-center" id="contact">
+        <section className="mx-auto md:max-w-5xl lg:max-w-7xl text-black">
           <h1 className="font-bold text-xl text-center">Get in Touch</h1>
           <p className="my-4 mx-4 text-sm md:mx-0 md:text-base">Please feel free to contact us for any further information.</p>
           <div className="flex justify-center">
             <a
               href="https://wa.me/923324884895"
-              className="bg-green-300 transition duration-500 hover:bg-green-100 rounded-full font-semibold text-base text-black px-12 py-2"
+              className="bg-green-500 transition duration-500 hover:bg-green-300 rounded-full font-semibold text-base text-black px-12 py-2"
               target="_blank"
             >
               Contact Us
