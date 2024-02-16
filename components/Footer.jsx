@@ -10,7 +10,7 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
   return (
-    <footer className="h-[500px] flex items-center justify-evenly flex-col relative text-black bg-green-600">
+    <footer className="min-h-[500px] flex items-center justify-evenly flex-col relative text-black bg-green-600">
       <section className="mx-auto md:max-w-4xl lg:max-w-6xl xl:max-w-6xl" style={{ width: "100%" }}>
         <div className="flex flex-col md:flex-row mx-8 my-4 md:mx-0 md:my-0">
           <div className="flex-1">
