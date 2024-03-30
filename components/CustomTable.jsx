@@ -1,44 +1,53 @@
-import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 const invoices = [
   {
-    invoice: "WOOD CHIPS ",
+    invoice: "Wood Chips ",
     paymentStatus: "250",
     totalAmount: "7",
     paymentMethod: "3.5",
   },
   {
-    invoice: "WOOD PELLETS ",
+    invoice: "Wood Pellets ",
     paymentStatus: "650",
     totalAmount: "15",
     paymentMethod: "4.8",
   },
   {
-    invoice: "LOGS",
+    invoice: "Logs",
     paymentStatus: "350",
     totalAmount: "7",
     paymentMethod: "4.1",
   },
   {
-    invoice: "MISCANTHUS (CHOPPED, 25% MC)",
+    invoice: "Miscanthus (Chopped, 25% MC)",
     paymentStatus: "140 - 180",
     totalAmount: "8.3",
     paymentMethod: "3.6",
   },
   {
-    invoice: "WHEAT GRAIN (15% MC)",
+    invoice: "Wheat Grain (15% MC)",
     paymentStatus: "760 - 780",
     totalAmount: "86",
     paymentMethod: "3.9",
   },
   {
-    invoice: "COAL",
+    invoice: "Coal",
     paymentStatus: "N/A",
     totalAmount: "484",
     paymentMethod: "7.5 - 8.6",
   },
   {
-    invoice: "ELECTRICITY",
+    invoice: "Electricity",
     paymentStatus: "N/A",
     totalAmount: "530",
     paymentMethod: "N/A",
@@ -49,19 +58,20 @@ export default function CustomTable() {
   return (
     <Table>
       <TableCaption className="text-xs md:text-base">
-        A THE TABLE BELOW GIVES AN OVERVIEW OF THE RELATIVE DENSITIES PER CUBIC METRE. THE CO2 EMITTED PER KWH OF HEAT GENERATED AND HOW MANY UNITS OF HEAT IN KWH MAY BE GAINED
-        FROM DIFFERENT BIOMASS FUELS.
+        The table below gives an overview of the relative densities per cubic
+        meter, the CO2 emitted per kWh of heat generated, and how many units of
+        heat in kWh may be gained from different biomass fuels.
       </TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead>Bio Mass Product</TableHead>
-          <TableHead>
+          <TableHead className="text-green-800">Bio Mass Product</TableHead>
+          <TableHead className="text-green-800">
             KG per m<sup>3</sup>
           </TableHead>
-          <TableHead>
+          <TableHead className="text-green-800">
             G/CO<sub>2</sub> Per KWH
           </TableHead>
-          <TableHead>KWH per KG</TableHead>
+          <TableHead className="text-green-800">KWH per KG</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
