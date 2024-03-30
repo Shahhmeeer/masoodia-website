@@ -51,7 +51,12 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
 }
 
 .custom-shape-divider-bottom-1702067844 {

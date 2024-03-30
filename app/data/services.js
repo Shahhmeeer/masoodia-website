@@ -10,14 +10,14 @@ const services = [
     name: "Solar Systems",
     description: "Masoodia® integrates cutting-edge solar systems for sustainable energy solutions.",
     cta: "Read More",
-    ctaLink: "/solar-systems",
+    ctaLink: "/solarsystems",
     relatedImage: "/solar.jpg",
   },
   {
     name: "Bio Mass",
     description: "Masoodia® leads in Bio Mass, supplying renewable energy to top Pakistani companies.",
     cta: "Read More",
-    ctaLink: "/bio-mass",
+    ctaLink: "/biomass",
     relatedImage: "/bio-mass.jpg",
   },
   {

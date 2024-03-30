@@ -1,7 +1,7 @@
 import CustomTable from "@/components/CustomTable";
 import React from "react";
 
-function ImportedCoalPage() {
+function Biomass() {
   return (
     <div className="relative sm:max-w-6xl max-w-sm mx-auto flex flex-col items-center justify-center min-h-[100dvh]">
       <h1 className="w-full font-black text-xl sm:text-2xl text-green-800 sm:pt-12">
@@ -26,4 +26,4 @@ function ImportedCoalPage() {
   );
 }
 
-export default ImportedCoalPage;
+export default Biomass;
